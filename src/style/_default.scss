@@ -1,0 +1,90 @@
+// colors
+$colors : (
+    "black"   : #222325,
+    "dark"    : #333,
+    "grey"    : rgba(0,0,0,.08),
+    "grey-bg" : #ededed,
+    "grey-1"  : #bdbdbd,
+    "grey-2"  : #646464,
+    "grey-3"  : #d0d0d0,
+    "grey-4"  : #616161,
+    "grey-5"  : #e5e5e5,
+    "white"   : #fff,
+    
+    "blue"      :#5079d9,
+    "blue-dark" :#3965cc,
+    "blue-1"    :#93b2f7,
+    "blue-light":#e5efff,
+
+    "red"       :#d44d44,
+    "red-1"     :#d03b34,
+    "red-dark"  :#f3938b,
+    "red-light" :#ffe7e5, 
+
+    "yellow"      :#c7a522,
+    "yellow-1"    :#a06e37,
+    "yellow-dark" :#d5b480,
+    "yellow-light":#fffbdf, 
+    
+    "green"       :#c7a522,
+    "green-1"     :#8aad37,
+    "green-dark"  :rgba(138,173,55,.6),
+    "green-light" :#f7fae1, 
+    // top-bar background-image: linear-gradient(90deg,#222325,#3b3c3f,#222325);    
+);
+// font-size
+$base-font-size : 16px;
+$font-sizes : (
+    // 12px
+    xss:0.75,
+    // 14px
+    xs: 0.875,
+    // 16px
+    sm: 1,
+    // 18px
+    md: 1.125, 
+    // 20px
+    lg: 1.25,
+    // 30px
+    xl:1.875,
+);
+
+// flex
+$flex-jc : (
+    'start'  : flex-start,
+    'end'    : flex-end,
+    'center' : center,
+    'betweeb': space-between,
+    'around' : space-around,
+);
+
+$flex-ai :(
+    start   : flex-start,
+    end     : flex-end,
+    center  : center,
+    stretch : stretch,
+);
+
+// spacing
+$spacing-types : (
+    m : margin,
+    p : padding,
+);
+
+$spacing-derections : (
+    t : top,
+    b : bottom ,
+    l : left,
+    r : right,
+);
+$spacing-base-size : 1rem;
+$spacing-sizes: (
+    0 : 0,
+    1 : 0.25,
+    2 : 0.5,
+    3 : 1,
+    4 : 1.5,
+    5 : 3,
+);
+
+
