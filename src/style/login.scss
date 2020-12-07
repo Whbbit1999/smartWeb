@@ -69,10 +69,17 @@ a{
         border-radius: 10px;
         text-indent: 1rem;
       }
-      #login{
+      #loginBtn{
         background: map-get($colors, 'blue-1' );
         color: #fff;
         height: 60px;
+        
+      }
+      #registered{
+        background: map-get($colors, 'blue-1' );
+        color: #fff;
+        height: 60px;
+        font-weight: bolder;
       }
     }
   }

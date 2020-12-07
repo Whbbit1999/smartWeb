@@ -2,162 +2,142 @@
 
 <html>
 
-	<head>
+<head>
 
-		<meta charset=utf-8 />
+	<meta charset=utf-8 />
 
-		<title>Flux Slider Demo &#0187; Hardware accelerated image transitions using CSS3</title>
-
-		<!--[if lte IE 8]>
-
- 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
-		<![endif]-->
-
-		<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
-		
-
-		<!-- Use Zepto for best performance on WebKit based browser -->
-
-		<!-- <script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script> -->
-
-		
-
-		<!-- Use jQuery for best compatibility with other CSS3 enabled browsers -->
-
-		<script src="http://www.jq22.com/jquery/1.4.4/jquery.min.js"></script>
-
-		
-
-		<script src="js/flux.min.js" type="text/javascript" charset="utf-8"></script>
-
-		<script type="text/javascript" charset="utf-8">
-
-			$(function(){
-
-				if(!flux.browser.supportsTransitions)
-
-					alert("Flux Slider requires a browser that supports CSS3 transitions");
-
-					
-
-				window.f = new flux.slider('#slider', {
-
-					autoplay: false,
-
-					pagination: false
-
-				});
-
-				
-
-				// Setup a listener for user requested transitions
-
-				$('div#transitions').bind('click', function(event){
-
-					event.preventDefault();
+	<title>Flux Slider Demo &#0187; Hardware accelerated image transitions using CSS3</title>
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="http://www.jq22.com/jquery/1.4.4/jquery.min.js"></script>
 
 
 
-					// If this is a 3D transform and the browser doesn't support 3D then inform the user
+	<script src="js/flux.min.js" type="text/javascript" charset="utf-8"></script>
 
-					if($(event.target).closest('ul').is('ul#trans3d') && !flux.browser.supports3d)
+	<script type="text/javascript" charset="utf-8">
 
-					{
+		$(function () {
 
-						alert("The '"+event.target.innerHTML+"' transition requires a browser that supports 3D transforms");
+			if (!flux.browser.supportsTransitions)
 
-						return;
+				alert("Flux Slider requires a browser that supports CSS3 transitions");
 
-					}
 
-					
 
-					window.f.next(event.target.href.split('#')[1]);
+			window.f = new flux.slider('#slider', {
 
-				});
+				autoplay: false,
+
+				pagination: false
 
 			});
 
-		</script>
 
-	</head>
 
-	<body id="transitiongallery">
+			// Setup a listener for user requested transitions
 
-		<section class="container">
+			$('div#transitions').bind('click', function (event) {
 
-			<h1><span class="flux">Flux</span> <span class="slider">Slider</span></h1>
+				event.preventDefault();
 
-			<h2>Hardware accelerated image transitions using CSS3.</h2>
 
-			<div id="slidercontainer">
 
-				<div id="slider">
+				// If this is a 3D transform and the browser doesn't support 3D then inform the user
 
-					<img src="img/avatar.jpg" alt="" />
+				if ($(event.target).closest('ul').is('ul#trans3d') && !flux.browser.supports3d) {
 
-					<img src="img/ironman.jpg" alt="" />
+					alert("The '" + event.target.innerHTML + "' transition requires a browser that supports 3D transforms");
 
-					<img src="img/tron.jpg" alt="" />
+					return;
 
-					<img src="img/greenhornet.jpg" alt="" />
+				}
 
-				</div>
 
-				<div id="transitions">
 
-					<h2>2D Transitions</h2>
+				window.f.next(event.target.href.split('#')[1]);
 
-					<ul id="trans2D">
+			});
 
-						<li><a href="#bars">Bars</a></li>
+		});
 
-						<li><a href="#zip">Zip</a></li>
+	</script>
 
-						<li><a href="#blinds">Blinds</a></li>
+</head>
 
-						<li><a href="#blocks">Blocks</a></li>
+<body id="transitiongallery">
 
-						<li><a href="#concentric">Concentric</a></li>
+	<section class="container">
 
-						<li><a href="#warp">Warp</a></li>
+		<h1><span class="flux">Flux</span> <span class="slider">Slider</span></h1>
 
-						<li><a href="#slide">Slide</a></li>
+		<h2>Hardware accelerated image transitions using CSS3.</h2>
 
-					</ul>
+		<div id="slidercontainer">
 
-					<h2>3D Transitions</h2>
+			<div id="slider">
 
-					<ul id="trans3d">
+				<img src="img/avatar.jpg" alt="" />
 
-						<li><a href="#bars3d">Bars3D</a></li>
+				<img src="img/ironman.jpg" alt="" />
 
-						<li><a href="#cube">Cube</a></li>
+				<img src="img/tron.jpg" alt="" />
 
-						<li><a href="#tiles3d" class="new">Tiles3D</a></li>
-
-						<li><a href="#blinds3d" class="new">Blinds3D</a></li>
-
-						<li><a href="#turn" class="new">Turn</a></li>
-
-					</ul>
-
-				</div>
+				<img src="img/greenhornet.jpg" alt="" />
 
 			</div>
 
-			<footer>
+			<div id="transitions">
 
-				
+				<h2>2D Transitions</h2>
 
-				<img src="img/html5.png" alt="HTML5" width="35px" />
+				<ul id="trans2D">
 
-			</footer>
+					<li><a href="#bars">Bars</a></li>
 
-		</section>
+					<li><a href="#zip">Zip</a></li>
 
-	</body>
+					<li><a href="#blinds">Blinds</a></li>
+
+					<li><a href="#blocks">Blocks</a></li>
+
+					<li><a href="#concentric">Concentric</a></li>
+
+					<li><a href="#warp">Warp</a></li>
+
+					<li><a href="#slide">Slide</a></li>
+
+				</ul>
+
+				<h2>3D Transitions</h2>
+
+				<ul id="trans3d">
+
+					<li><a href="#bars3d">Bars3D</a></li>
+
+					<li><a href="#cube">Cube</a></li>
+
+					<li><a href="#tiles3d" class="new">Tiles3D</a></li>
+
+					<li><a href="#blinds3d" class="new">Blinds3D</a></li>
+
+					<li><a href="#turn" class="new">Turn</a></li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<footer>
+
+
+
+			<img src="img/html5.png" alt="HTML5" width="35px" />
+
+		</footer>
+
+	</section>
+
+</body>
 
 </html>

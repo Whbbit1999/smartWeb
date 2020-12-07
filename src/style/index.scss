@@ -1,8 +1,10 @@
+@import './default';
 article{
   width: 1220px;
   margin: 0 auto;
+  padding-bottom: 30px;
   
-
+  // 轮播图
   .banner{
     
     margin-top: 30px;
@@ -12,6 +14,7 @@ article{
     }
     padding-bottom: 20px;
   }
+  // 精选商品
   .featured{
     width: 100%;
     border-radius: 10px;
@@ -30,4 +33,107 @@ article{
       }
     }
   }
-}
+
+  main{
+    height: 3.75rem;
+    background: map-get($colors, 'grey-3');
+    padding: 0 20px;
+    h2{
+      margin: 0;
+      padding: 0;
+      color: map-get($colors, 'grey-2');
+    }
+  }
+
+  // 热门商品
+  .hot{
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+    height: 490px;
+    background: #fff;
+   
+    // 详情
+    .hot-product{
+      a{
+        width: 25%;
+        height: 100%;
+        position: relative;
+        border-right: 1px solid map-get($colors, 'grey');
+        &:hover{
+          color: map-get($colors, 'red');
+          box-shadow: inset ;
+          
+        }
+        h2{
+          color: map-get($colors, 'black');
+        }
+        .price{
+          margin-top: 40px;
+        }
+        &:last-child{
+          border-right: none;
+        }
+        
+      }
+      
+    }
+  }
+
+  .product{
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 1220px;
+    .details{
+      width: 100%;
+      height: 860px;
+      // 使用网格布局
+      display: grid;
+      grid-template-columns:  25% 25% 25% 25%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "a a b c" "d e f g";
+      background: #fff;
+      .main{
+        grid-area: a;
+        img{
+          width: 100%;
+        }
+      }
+      .related{
+        a{
+          
+          height: 100%;
+          position: relative;
+          border-right: 1px solid map-get($colors, 'grey');
+          &:hover{
+            color: map-get($colors, 'red');
+            box-shadow: inset ;
+            
+          }
+          h2{
+            color: map-get($colors, 'black');
+          }
+          .price{
+            margin-top: 40px;
+          }
+          &:last-child{
+            border-right: none;
+          }
+          
+        }
+      }
+
+
+    }
+  }
+
+
+} 
+ .dowload{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    cursor: pointer;
+  }
