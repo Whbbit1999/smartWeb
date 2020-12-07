@@ -43,6 +43,8 @@
 }
 
 nav{  
+position: sticky;
+top: 0;
  width: 100%;
   height: 75px;
   background: map-get($colors, 'white' );
@@ -57,7 +59,8 @@ nav{
         color: map-get($colors, 'dark' );
         &:hover{
           color: map-get($colors, 'blue' );
-        }
+  
+        } 
       }
     }
     .search{
@@ -107,8 +110,83 @@ nav{
       }   
     }
   }
+  & .active{
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
 
 footer{
-
+  height: 400px;
+  width: 100%;
+  background: #fafafa;
+  border-top: 1px solid #e6e6e6;
+  
+  .footer-main{
+    width: 1220px;
+    margin: 0 auto;
+    .foot-menu{
+      padding: 60px 0 55px;
+      ul{
+        width: 40%;
+        
+        li {
+          h2{
+            margin: 0;
+            color: #646464;
+            padding-bottom: 12px;
+          }
+          a{
+            display: block;
+            margin-top: 10px;
+          }
+        }
+      }
+      .foot-service{
+        // width: 50%;
+        h1{
+          margin: 0;
+          color: map-get($colors, 'blue' );
+        }
+        p{
+          line-height: 16px;
+          margin: 0;
+          color: map-get($colors, 'grey-1' );
+          text-align: right;
+        }
+        button{
+          border: none;
+          width: 132px;
+          height: 30px;
+          color: map-get($colors, 'blue' );
+          border: 1px solid #d0d0d0;
+          background: linear-gradient(#fcfcfc,#f5f5f5);
+        }
+      }
+    }
+    hr{
+      width: 100%;
+      border: 1px solid map-get($colors, 'grey-5' );
+      margin-bottom: 2rem;
+    }
+    .foot-info{
+      ul{
+        .ba{
+          margin-right: 10px;
+        }
+        li {
+          color:#969696 ;
+          a{
+            padding: 0 10px;
+            border-left : 1px solid map-get($colors, 'grey-2' );
+          }
+        }
+        .f-first{
+          border-left: none;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  
 }

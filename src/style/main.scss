@@ -18,6 +18,11 @@ body {
 
 a{
     text-decoration: none;
+    color:#969696 ;
+    &:hover{
+        color: map-get($colors, 'blue' );
+
+    }
 }
 
 ul,li {

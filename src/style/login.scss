@@ -1,0 +1,96 @@
+@import './default';
+body{
+  background: url(../img/bg.png);
+}
+
+a{
+  color: map-get($colors, 'blue-1' );
+}
+
+.box{
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  width: 40%;
+  min-width: 400px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,.2);
+  padding-top: 30px;
+  .box-header{
+    text-align: center;
+    h1{
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 40px;
+    }
+    padding-bottom: 60px;
+  }
+
+  .box-main{
+    form{
+      input{
+        display: block;
+        height: 38px;
+        
+        width: 90%;
+        border: 1px solid map-get($colors, 'grey' );
+        background: rgba(0,0,0,.03);
+        margin-bottom: 15px;
+        border-radius: 10px;
+        text-indent: 1rem;
+      }
+      div{
+        margin-top: -30px;
+        width: 90%;
+        p{
+          margin: 0;
+          padding: 0;
+          a{
+            font-weight: bolder;
+          }
+        }
+        input{
+          width: 15px;
+          display: inline-block;
+          margin-top: 15px;
+        }
+      }
+      select{
+        display: block;
+        height: 38px;
+        width: 90%;
+        border: 1px solid map-get($colors, 'grey' );
+        background: rgba(0,0,0,.03);
+        margin-bottom: 15px;
+        border-radius: 10px;
+        text-indent: 1rem;
+      }
+      #login{
+        background: map-get($colors, 'blue-1' );
+        color: #fff;
+        height: 60px;
+      }
+    }
+  }
+  .box-footer{
+    margin: 0 auto;
+    width: 90%;
+    div{
+      width: 100%;
+    }
+    hr{
+      width: 100%;
+      max-height: 1px;
+      // border-color: map-get($colors, 'grey-1' );
+    }
+  }
+}
+
+footer{
+  margin-top: 90vh;
+  text-align:  center;
+}

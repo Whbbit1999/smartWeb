@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+
+  <link rel="shortcut icon" href="./img/logo.ico" />
+  <title>首页</title>
+
   <link rel="stylesheet" href="./style/main.min.css">
   <link rel="stylesheet" href="./style/header.min.css">
+  <link rel="stylesheet" href="./style/index.min.css">
 </head>
 
 <body>
@@ -31,7 +36,7 @@
       <a href="#">下载APP</a>
     </div>
     <div class="login d-flex jc-around ai-center">
-      <a href="#" class="login"></a>
+      <a href="./pages/login.html" class="login"></a>
       <a href="#" class="cart"></a>
     </div>
   </header>
@@ -39,7 +44,7 @@
   <nav>
     <div class="main d-flex jc-between">
       <div class="nav-menu d-flex jc-around ai-center fs-xs">
-        <li><a href="#">首页</a></li>
+        <li><a href="#" class="active">首页</a></li>
         <li><a href="#">坚果手机</a></li>
         <li><a href="#">TNT</a></li>
         <li><a href="#">官方自营</a></li>
@@ -68,9 +73,101 @@
 
 
 
+  <article>
+    <!-- 轮播图 -->
+    <div class="banner">
+      <img src="./img/banner1.png" alt="">
+    </div>
+
+    <!-- 精选商品 -->
+    <div class="featured d-flex">
+      <a href="#"><img src="./img/featured1.png" alt=""></a>
+      <a href="#"><img src="./img/featured2.png" alt=""></a>
+      <a href="#"><img src="./img/featured3.jpg" alt=""></a>
+      <a href="#"><img src="./img/featured4.jpg" alt=""></a>
+    </div>
+    <!-- 热门商品 -->
+    <div class="hot">
+      <nav>
+        <h1>热门商品</h1>
+        <aside>
+          <span></span>
+          <span></span>
+        </aside>
+      </nav>
+      <main>
+        <div class="first"></div>
+        <div class="second"></div>
+      </main>
+    </div>
+  </article>
+  <!-- article end -->
+
+
+
   <footer>
+    <div class="footer-main d-flex jc-around flex-column">
+      <div class="foot-menu d-flex jc-between">
+        <ul class="d-flex jc-between fs-xss">
+          <li>
+            <h2 class="fs-xss">订单服务</h2>
+            <a href="">购买指南</a>
+            <a href="">送货政策</a>
+          </li>
+          <li>
+            <h2 class="fs-xss">服务支持</h2>
+            <a href="">零售门店</a>
+            <a href="">自助服务</a>
+            <a href="">维修门店</a>
+          </li>
+          <li>
+            <h2 class="fs-xss">媒体中心</h2>
+            <a href="">新闻动态</a>
+            <a href="">官方视频</a>
+            <a href="">图片资源</a>
+          </li>
+          <li>
+            <h2 class="fs-xss">关注我们</h2>
+            <a href="">新浪微博</a>
+            <a href="">官方微信</a>
+            <a href="">荣誉奖项</a>
+          </li>
+        </ul>
+        <div class="foot-service d-flex  ai-end flex-column jc-around">
+          <h1 class="fs-md">400 - 603 - 5000</h1>
+          <p class="fs-xss">
+            周一到周日 9:00 - 18:00
+            <br>
+
+            (仅收市话费)
+          </p>
+          <button>在线帮助</button></button>
+        </div>
+      </div>
+
+      <hr>
+      <div class="foot-info">
+        <ul class="d-flex fs-xss">
+          <li class="ba">Copyright &copy; 2020 smartisan.com 版权所有</li>
+          <li><a href="#">锤子商城隐私政策</a></li>
+          <li><a href="#">锤子商城用户协议</a></li>
+          <li><a href="#">资质证照</a></li>
+        </ul>
+        <ul class="d-flex fs-xss">
+          <li><a href="#" class="f-first">京 ICP 备 19048576 号 - 1</a></li>
+          <li><a data-v-0e38ecc8="" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502039854"
+              target="_blank">京公网安备 11010502039854号</a></li>
+
+          <li><a href="#">京食药网食备 202010031</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
 
   </footer>
+  <!-- footer end -->
 </body>
 
 </html>
