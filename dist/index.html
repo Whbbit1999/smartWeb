@@ -47,7 +47,18 @@
     <div class="main d-flex jc-between">
       <div class="nav-menu d-flex jc-around ai-center fs-xs">
         <li><a href="./index.html" class="active" id="home">首页</a></li>
-        <li><a href="javascript:;">坚果手机</a></li>
+        <li class="phone">
+          <a href="javascript:;">坚果手机</a>
+          <div class="box">
+            <ul>
+              <li>手机</li>
+              <li>
+                <img src="" alt="">
+                <h3>手机</h3>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li><a href="javascript:;">TNT</a></li>
         <li><a href="javascript:;">官方自营</a></li>
         <li><a href="javascript:;">服饰箱包</a></li>
@@ -78,7 +89,7 @@
   <article>
     <!-- 轮播图 -->
     <div class="banner">
-      <div class="swiper-container">
+      <div class="swiper-container" id="banner">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./img/banner1.png" alt="">
@@ -114,75 +125,58 @@
         </aside>
       </main>
       <div class="hot-product d-flex jc-between ai-center">
-        <div class="swiper-container spwiper-1">
-          <div class="swiper-wrapper d-flex">
-            <div class="swiper-slide">
-              <div class="hot-product d-flex jc-between ai-center">
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">坚果R2</h2>
-                  <p class="fs-xss">是下一代手机，更是下一代电脑</p>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags danger fs-xss">买赠</div>
-                </a>
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">坚果R2</h2>
-                  <p class="fs-xss">是下一代手机，更是下一代电脑</p>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags info fs-xss">买赠</div>
-                </a>
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">坚果R2</h2>
-                  <p class="fs-xss">是下一代手机，更是下一代电脑</p>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags success fs-xss">买赠</div>
-                </a>
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">坚果R2</h2>
-                  <p class="fs-xss">是下一代手机，更是下一代电脑</p>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags warning fs-xss">买赠</div>
-                </a>
 
-              </div>
-
-            </div>
-            <div class="swiper-slide">
-              <div class="hot-product d-flex jc-between ai-center">
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">TnT</h2>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags danger fs-xss">买赠</div>
-                </a>
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">TnT</h2>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags info fs-xss">买赠</div>
-                </a>
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">TnT</h2>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags success fs-xss">买赠</div>
-                </a>
-                <a href="#" class="d-flex jc-center ai-center flex-column">
-                  <img src="./img/R2.png" alt="">
-                  <h2 class="fs-xss">TnT</h2>
-                  <div class="price">￥4,799.00</div>
-                  <div class="tags warning fs-xss">买赠</div>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <a href="#" class="d-flex jc-center ai-center flex-column">
+          <img src="./img/R2.png" alt="">
+          <h2 class="fs-xss">坚果R2</h2>
+          <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+          <div class="price">￥4,799.00</div>
+          <div class="tags danger fs-xss">买赠</div>
+        </a>
+        <a href="#" class="d-flex jc-center ai-center flex-column">
+          <img src="./img/R2.png" alt="">
+          <h2 class="fs-xss">坚果R2</h2>
+          <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+          <div class="price">￥4,799.00</div>
+          <div class="tags info fs-xss">买赠</div>
+        </a>
+        <a href="#" class="d-flex jc-center ai-center flex-column">
+          <img src="./img/R2.png" alt="">
+          <h2 class="fs-xss">坚果R2</h2>
+          <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+          <div class="price">￥4,799.00</div>
+          <div class="tags success fs-xss">买赠</div>
+        </a>
+        <a href="#" class="d-flex jc-center ai-center flex-column">
+          <img src="./img/R2.png" alt="">
+          <h2 class="fs-xss">坚果R2</h2>
+          <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+          <div class="price">￥4,799.00</div>
+          <div class="tags warning fs-xss">买赠</div>
+        </a>
 
       </div>
+      <div class="swiper-container" id="hot">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+
+          </div>
+          <div class="swiper-slide">
+
+          </div>
+          <div class="swiper-slide">
+
+          </div>
+          <div class="swiper-slide">
+
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+    </div>
     </div>
 
 
@@ -342,17 +336,19 @@
   <script src="./lib/swiper/js/swiper.min.js"></script>
   <script>
 
-    const mySwiper = new Swiper('.swiper-container', {
+    const bannerSwiper = new Swiper('#banner', {
       loop: true,
       autoplay: 5000,//可选选项，自动滑动
       pagination: '.swiper-pagination', //分页
       effect: 'fade',
       paginationClickable: true,
     })
-
-    const mySwiper1 = new Swiper('.swiper-container.swiper-1', {
-      // slidesPerView: 4,
-      slidesPerGroup: 4,
+    const hotSwiper = new Swiper('#hot', {
+      loop: true,
+      autoplay: 5000,//可选选项，自动滑z动
+      pagination: '.swiper-pagination', //分页
+      effect: 'fade',
+      paginationClickable: true,
     })
   </script>
 </body>

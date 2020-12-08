@@ -1,0 +1,116 @@
+@import './default';
+body{
+  background: #fff;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+
+
+
+.product{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width:1220px;
+  margin: 0 auto;
+  .product-img{
+    width: 50%;
+    height: 500px;
+    img{
+      height: 100%;
+    }
+  }
+  hr{
+    // border:1px silid gray;
+    // width: 100%;
+    margin: 40px 0;
+  }
+  a{
+    color: map-get($colors, 'blue');
+  }
+  .interest-free{
+    // text-align: right;
+    & span:first-child{
+      height: 20px;
+    }
+    .price{
+      font-size: 14px;
+      // font-weight: bolder;
+      font-weight: normal;
+    }
+  }
+  .product-message{
+    color: gray;
+    font-size: 12px;
+    width: 50%; 
+    line-height: 20px;
+    p{
+      padding: 0;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+    .head{
+      width: 100%;
+      font-size: 14px;
+    }
+    h1{
+      font-weight: normal;
+      color: #000;
+    }
+    button{
+      background: #fff;
+      font-size: 18px;
+      border:1px solid map-get($colors, 'blue');
+      padding: .5rem 1rem;
+      border-radius: 5px;
+    } 
+    .promotions{
+
+      .tag{
+        font-weight: bolder;
+        
+        display: inline-block;
+        text-align: center;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+    }
+    .title{
+      width: 15%;
+      color: #666;
+      font-size: 14px;
+    }
+  }
+  .capacity-select{
+      button{
+        margin-bottom: 10px;
+        &:hover{
+          box-shadow: 2px 1px 3px rgba(0,0,0,0.3);
+        }
+      }
+      
+  }
+  .color-select{
+    button{
+        margin-bottom: 10px;
+        &:hover{
+          box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+        }
+    }
+    .service{
+      width: 100%;
+      #service{
+         width: 40%;
+      }
+      .contant{
+        .button{
+          border: 1px solid map-get($color, 'blue');
+          width: 80%;
+        }
+      }
+    }
+    
+  }
+}
