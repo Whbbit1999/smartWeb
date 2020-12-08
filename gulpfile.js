@@ -54,6 +54,7 @@ function fnWatch() {
     watch('./src/style/**/*.scss', fnCss);
     watch('./src/js/**/*.js', fnJs);
     watch('./src/lib/**/*', copyLib);
+    watch('./src/img/**/*', fnImg);
 }
 
 exports.index = copyIndex
