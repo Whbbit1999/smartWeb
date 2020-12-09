@@ -9,10 +9,12 @@
   <link rel="shortcut icon" href="./img/logo.ico" />
   <title>首页</title>
 
+
   <link rel="stylesheet" href="./style/main.min.css">
   <link rel="stylesheet" href="./style/header.min.css">
   <link rel="stylesheet" href="./style/index.min.css">
   <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+
 </head>
 
 <body>
@@ -34,7 +36,15 @@
       <a href="javascript:;">开发者支持</a>
       <a href="javascript:;">荣誉与奖项</a>
       <a href="javascript:;">加入我们</a>
-      <a href="javascript:;">下载APP</a>
+      <a href="javascript:;" class="dowload-app">
+        下载APP
+        <div class="eq">
+          <img src="./img/product/dowload-app-eq.png" alt="">
+          下载锤子商城APP
+          <div class="price">领新人专享大礼包</div>
+        </div>
+      </a>
+
     </div>
     <div class="login d-flex jc-around ai-center">
       <a href="./pages/login.html" class="login"></a>
@@ -46,28 +56,97 @@
   <nav>
     <div class="main d-flex jc-between">
       <div class="nav-menu d-flex jc-around ai-center fs-xs">
-        <li><a href="./index.html" class="active" id="home">首页</a></li>
-        <li class="phone">
-          <a href="javascript:;">坚果手机</a>
-          <div class="box">
-            <ul>
-              <li>手机</li>
-              <li>
-                <img src="" alt="">
-                <h3>手机</h3>
-              </li>
-            </ul>
+        <li>
+          <a href="./index.html" class="active" id="home">首页</a>
+          <div class="product-menu">
+            <div class="d-flex jc-center">
+              <ul>
+                <h4>手机</h4>
+                <li><img src="./img/nav/nav-phone.png" alt=""><a href="./pages/list.html">手机</a></li>
+              </ul>
+              <ul>
+                <h4>官方配件</h4>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">数据线</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">充电器</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">线控耳机</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">移动电源</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">拍照配件</a></li>
+              </ul>
+              <ul>
+                <h4>畅呼吸系列</h4>
+                <li><img src="./img/nav/nav-air-purifier.png" alt=""><a href="#">空气净化器</a></li>
+                <li><img src="./img/nav/nav-air-purifier.png" alt=""><a href="#">生活电器配件</a></li>
+              </ul>
+              <ul>
+                <h4>服饰箱包</h4>
+                </h4>
+                <li><img src="./img/nav/nav-close.jpg" alt=""><a href="#">箱包</a></li>
+                <li><img src="./img/nav/nav-close.jpg" alt=""><a href="#">男装</a></li>
+              </ul>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
         </li>
-        <li><a href="javascript:;">TNT</a></li>
-        <li><a href="javascript:;">官方自营</a></li>
-        <li><a href="javascript:;">服饰箱包</a></li>
-        <li><a href="javascript:;">抖音热卖</a></li>
-        <li><a href="javascript:;">数码3C</a></li>
-        <li><a href="javascript:;">家居生活</a></li>
-        <li><a href="javascript:;">家用电器</a></li>
-        <li><a href="javascript:;">美妆个护</a></li>
-        <li><a href="javascript:;">服务</a></li>
+        <li>
+          <a href="javascript:;">坚果手机</a>
+
+        </li>
+        <li>
+          <a href="javascript:;">TNT</a>
+          <div class="product-menu">
+            <div class="d-flex jc-center">
+              <ul>
+                <h4>手机</h4>
+                <li><img src="./img/nav/nav-phone.png" alt=""><a href="./pages/list.html">手机</a></li>
+              </ul>
+              <ul>
+                <h4>官方配件</h4>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">数据线</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">充电器</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">线控耳机</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">移动电源</a></li>
+                <li><img src="./img/nav/nav-data-line.jpg" alt=""><a href="#">拍照配件</a></li>
+              </ul>
+              <ul>
+                <h4>畅呼吸系列</h4>
+                <li><img src="./img/nav/nav-air-purifier.png" alt=""><a href="#">空气净化器</a></li>
+                <li><img src="./img/nav/nav-air-purifier.png" alt=""><a href="#">生活电器配件</a></li>
+              </ul>
+              <ul>
+                <h4>服饰箱包</h4>
+                </h4>
+                <li><img src="./img/nav/nav-close.jpg" alt=""><a href="#">箱包</a></li>
+                <li><img src="./img/nav/nav-close.jpg" alt=""><a href="#">男装</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:;">官方自营</a>
+        </li>
+        <li>
+          <a href="javascript:;">服饰箱包</a>
+        </li>
+        <li>
+          <a href="javascript:;">抖音热卖</a>
+        </li>
+        <li>
+          <a href="javascript:;">数码3C</a>
+        </li>
+        <li>
+          <a href="javascript:;">家居生活</a>
+        </li>
+        <li>
+          <a href="javascript:;">家用电器</a>
+        </li>
+        <li>
+          <a href="javascript:;">美妆个护</a>
+        </li>
+        <li>
+          <a href="javascript:;">服务</a>
+        </li>
       </div>
       <div class="search d-flex flex-1  ai-center">
         <div class="nav-search d-flex ai-center">
@@ -334,8 +413,10 @@
 
   <!-- js 轮播图 -->
   <script src="./lib/swiper/js/swiper.min.js"></script>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/hoverSelect.min.js"></script>
   <script>
-
+    // 轮播图
     const bannerSwiper = new Swiper('#banner', {
       loop: true,
       autoplay: 5000,//可选选项，自动滑动
@@ -350,6 +431,8 @@
       effect: 'fade',
       paginationClickable: true,
     })
+    // 划过下拉菜单
+
   </script>
 </body>
 

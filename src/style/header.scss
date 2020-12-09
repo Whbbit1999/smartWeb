@@ -4,6 +4,31 @@
   height: 2.8125rem;
   width: 100%;
   padding-right: 10px;
+  .dowload-app{
+    position: relative;
+    .eq{
+      padding: 15px ;
+      border-radius: 10px;
+      width: 150px;
+      height: 200px;
+      position: absolute;
+      top: 32px;
+      left: 0;
+      z-index: 10000;
+      opacity: 0;
+      color: rgba(0,0,0, .5);
+      font-size: 14px;
+      text-align: center;
+      background: #fff;
+      .price{
+        font-weight: normal;
+        font-size: 14px;
+      }
+      img{
+      width: 100%;
+      }
+    }
+  }
   .logo{
     width: 5%;
     margin-right: 60px;
@@ -44,6 +69,7 @@
 
 nav{  
 position: sticky;
+
 top: 0;
 z-index: 999;
  width: 100%;
@@ -51,6 +77,8 @@ z-index: 999;
   background: map-get($colors, 'white' );
 
   .main{
+    position: relative;
+
     width: 1220px;
     height: 100%;
     margin: 0 auto;
@@ -65,7 +93,6 @@ z-index: 999;
         } 
       }
       .phone{
-        position: relative;
         .box{
           position: absolute;
           bottom: -226px;
@@ -73,6 +100,39 @@ z-index: 999;
           width: 100%;
           min-height: 226px;
           background: #fff;
+        }
+      }
+      .product-menu{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 300px;
+        opacity: 0;
+        ul{
+          width: 20%;
+          padding-top: 20px;
+          h4{
+            font-size: 12px;
+            font-weight: 700;
+            color: gray;
+          }
+          li{
+            display: flex;
+            align-items: center;
+            img{
+              height: 40px;
+              margin-right: 10px;
+            }
+            a{
+              cursor: pointer;
+              font-weight: 500;
+              &:hover{
+                color: gray;
+              }
+            }
+          }
         }
       }
     }
