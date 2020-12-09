@@ -11,6 +11,11 @@ const uglify = require('gulp-uglify');
 
 const img = require('gulp-imagemin');
 
+
+function copyData() {
+    return src('./src/data.json')
+        .pipe(dest('./dist'))
+}
 function copyIndex() {
     return src('./src/index.html')
         .pipe(dest('./dist'));
@@ -50,6 +55,7 @@ function copyLib() {
 
 function fnWatch() {
     watch('./src/index.html', copyIndex);
+    watch('./src/data.json', copyData)
     watch('./src/pages/**/*', fnHtml);
     watch('./src/style/**/*.scss', fnCss);
     watch('./src/js/**/*.js', fnJs);
@@ -58,6 +64,7 @@ function fnWatch() {
 }
 
 exports.index = copyIndex
+exports.data = copyData
 exports.html = fnHtml
 exports.css = fnCss
 exports.js = fnJs

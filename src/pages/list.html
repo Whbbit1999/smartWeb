@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../style/header.min.css">
   <link rel="stylesheet" href="../style/index.min.css">
   <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="../style/list.min.css">
 </head>
 
 <body>
@@ -159,7 +160,45 @@
   </nav>
   <!-- nav end -->
 
+  <!-- 详情 -->
+  <article>
+    <div class="article-top-bar">
+      <a href="javascript:;">综合排序</a>·
+      <a href="javascript:;">销量排序</a>·
+      <a href="javascript:;">价格低到高</a>·
+      <a href="javascript:;">价格高到低</a>
+    </div>
 
+
+    <div class="product hot-product d-flex ai-center flex-wrap">
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+      <a href="#" class="d-flex jc-center ai-center flex-column">
+        <div class="swiper-container" id="banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/list/blackPro3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/list/blackPro3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/list/blackPro3.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/list/blackPro3.webp" alt="">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </a>
+    </div>
+  </article>
 
   <footer>
     <div class="footer-main d-flex jc-around flex-column">
@@ -220,8 +259,22 @@
     </div>
   </footer>
   <!-- footer end -->
+
+  <script src="../lib/swiper/js/swiper.min.js"></script>
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/hoverSelect.min.js"></script>
+  <!-- <script src="../js/jquery.cookie.js"></script> -->
+
+  <script>
+    // 轮播图
+    const bannerSwiper = new Swiper('#banner', {
+      loop: true,
+      autoplay: 5000,//可选选项，自动滑动
+      pagination: '.swiper-pagination', //分页
+      effect: 'fade',
+      paginationClickable: true,
+    })
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,24 @@
+{
+  "wh-shop-R2" : {
+    "name" : "坚果R2",
+    "price" : "￥4,999.00",
+    "img" : "./img/list/R2webp.webp",
+    "message" : "购买即赠足迹保护套（盲盒款）+ TW真无线耳机",
+    "tags" : "买赠"
+  },
+  "wh-shop-Pro3" : {
+    "name" : "坚果Pro 3",
+    "price" : {
+      "blackPrice" : "￥2,899.00",
+      "whitePrice" : "￥3,199.00",
+      "greenPrice" : "￥3,199.00"
+    },
+    "img" : {
+      "blackSrc" : "./img/list/blackPro3.webp",
+      "whiteSrc" : "./img/list/whitePro3.webp",
+      "greenSrc" : "./img/list/greenPro3.webp"
+    },
+    "message" : "高通骁龙™ 855plus·4800万模范四摄",
+    "tags" : ""
+  }
+}

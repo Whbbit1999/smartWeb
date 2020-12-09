@@ -43,6 +43,25 @@ a{
         border-radius: 10px;
         text-indent: 1rem;
       }
+      b{
+        display: block;
+        width: 90%;
+        position: relative;
+        input{
+          width: 100%;
+        }
+        span{
+          position: absolute;
+          padding: 5px;
+          top: 10%;
+          right: 10px;
+          background: map-get($colors, 'red');
+          color: #fff;
+          font-weight: 700;
+          border-radius: 8px;
+          display: none;
+        }
+      }
       div{
         margin-top: -30px;
         width: 90%;

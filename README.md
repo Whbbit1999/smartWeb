@@ -52,3 +52,10 @@ grid-area : a ;//设置项目属性
 
 ## 首页导航条下拉显示详情
 使用jquery和css3进行搭建
+
+## css实现溢出隐藏
+```css
+overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+```

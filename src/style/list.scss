@@ -1,0 +1,43 @@
+@import './default';
+.article-top-bar{
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.product{
+  background: #fff;
+  padding-bottom: 10px;
+  a{
+    position: relative;
+    width: 25%;
+    height: 430px;
+    border-right: 1px solid #dadada;
+    padding: 0 20px;
+    &:nth-child(4n){
+      border-right: none;;
+    }
+    h2{
+        color: black;
+      }
+    margin-top: 10px;
+    &:hover{
+      
+      p{
+        color: map-get($colors, 'red' ) !important;
+
+      }
+    }
+    p{
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .price{
+      padding-top: 50px;
+    }
+  }
+}
