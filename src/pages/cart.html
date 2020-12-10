@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../style/header.min.css">
   <link rel="stylesheet" href="../style/main.min.css">
   <link rel="stylesheet" href="../style/index.min.css">
-
+  <link rel="stylesheet" href="../style/cart.min.css">
 </head>
 
 <body>
@@ -40,6 +40,117 @@
   <!-- header end -->
 
 
+  <!-- 购物车 -->
+  <article>
+    <main class="title d-flex ai-center jc-between">
+      <h2>购物清单</h2>
+    </main>
+    <!-- 未购买商品时显示 -->
+    <div class="cart">
+      <p>您的购物车中还没有商品</p>
+      <div class="btns">
+        <button class="login">登录</button>
+        <button class="index">现在选购</button>
+      </div>
+    </div>
+    <!-- 已购买时显示 -->
+    <div class="cart-tabel">
+      <div class="cart-table-title d-flex jc-around ai-center">
+        <span class="pMessage">商品信息</span>
+        <span class="price">单价</span>
+        <span class="num">数量</span>
+        <span class="count">小计</span>
+        <span class="operating1">操作</span>
+      </div>
+      <!-- <div class="cart-table d-flex jc-around ai-center">
+        <div class="pMessage d-flex jc-start ai-center">
+          <div class="img">
+            <img src="../img/list/R2webp.webp" alt="">
+          </div>
+          <div class="message">
+            <h2>R2</h2>
+            <div class="tips">黑色</div>
+          </div>
+        </div>
+        <div class="price">￥999</div>
+        <div class="num d-flex jc-around ai-center">
+          <span class="less"></span>
+          <span class="num"></span>
+          <span class="add"></span>
+        </div>
+        <div class="count"></div>
+        <div class="operating"></div>
+      </div> -->
+    </div>
+  </article>
+  <!-- 相关推荐 -->
+  <article class="recommend">
+    <main class="title d-flex jc-between ai-center">
+      <h2>相关推荐</h2>
+    </main>
+    <div class="product d-flex ai-center jc-between flex-wrap">
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags success fs-xss">满减</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags warning fs-xss">直降</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+      <a href="./product.html" class="d-flex jc-center ai-center flex-column">
+        <img src="../img/R2.png" alt="">
+        <h2 class="fs-xss">坚果R2</h2>
+        <p class="fs-xss">是下一代手机，更是下一代电脑</p>
+        <div class="price">￥4,799.00</div>
+        <div class="tags danger fs-xss">买赠</div>
+      </a>
+    </div>
+  </article>
+
+
+
+  <!-- footer start -->
   <footer>
     <div class="footer-main d-flex jc-around flex-column">
       <div class="foot-menu d-flex jc-between">
@@ -100,6 +211,8 @@
   </footer>
   <!-- footer end -->
 
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/cart.min.js"></script>
 </body>
 
 </html>

@@ -6,10 +6,15 @@ class HoverSelect {
     this.nav_menu = $('.nav-menu')
     this.lis = $('.nav-menu li')
     this.product_menu = $('li .product-menu')
+    this.init()
     this.hover()
   }
-  hover() {
+  init() {
+    this.product_menu.css('opacity', '0')
+    this.eq.css('opacity', '0')
 
+  }
+  hover() {
     this.nav_menu.hover(() => {
       // 鼠标划入
       this.product_menu.slideDown()

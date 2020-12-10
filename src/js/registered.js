@@ -55,27 +55,27 @@ class Registered {
         const pwd = this.pwd.val();
         const rePwd = this.confirmPwd.val();
         // 获取cookie
-        let cookieStr = $.cookie('register');
+        let cookieStr = $.cookie('wh-register');
         // 将cookie字符串转换成对象
         let cookieObj = coverStrToObj(cookieStr);
         // 查找cookie中是否有手机号，有的话提示该手机号已被注册
         if (username in cookieObj) {
-          this.wrong_user.html('该手机已被注册')
+          this.wrong_phoneNum.text('该手机已被注册')
           this.wrong_phoneNum.css('display', 'block')
         } else {
           this.wrong_phoneNum.css('display', 'none')
           cookieObj[username] = pwd;
-          $.cookie('register', JSON.stringify(cookieObj), { expries: 7, path: '/' })
+          $.cookie('wh-register', JSON.stringify(cookieObj), { expries: 7, path: '/' })
           this.username = this.pwd = this.rePwd = '';
           location.href = '../pages/login.html'
         }
       } else {
         this.wrong_phoneNum.css('display', 'block');
-        this.wrong_phoneNum.html('请输入手机号')
+        this.wrong_phoneNum.text('请输入手机号')
         this.wrong_pwd.css('display', 'block')
-        this.wrong_pwd.html('请输入密码')
+        this.wrong_pwd.text('请输入密码')
         this.wrong_confirmPwd.css('display', 'block')
-        this.wrong_confirmPwd.html('请确认密码')
+        this.wrong_confirmPwd.text('请确认密码')
       }
     })
 

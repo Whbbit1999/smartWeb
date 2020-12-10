@@ -125,3 +125,14 @@ ul,li {
     font-size: 18px;
     font-weight: bolder;
 }
+
+main{
+    height: 3.75rem;
+    background: map-get($colors, 'grey-3');
+    padding: 0 20px;
+    h2{
+      margin: 0;
+      padding: 0;
+      color: map-get($colors, 'grey-2');
+    }
+  }

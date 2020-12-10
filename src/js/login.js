@@ -39,7 +39,7 @@ class Login {
       if (this.arr.indexOf(false) === -1) {
         this.loginBtn.css('background', "#5c89f2")
         // 获取cookie
-        const cookieStr = $.cookie('register');
+        const cookieStr = $.cookie('wh-register');
         // 将cookie转换成对象
         const cookieObj = coverStrToObj(cookieStr);
         const username = this.phoneNum.val()

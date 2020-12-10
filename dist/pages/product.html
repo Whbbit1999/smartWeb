@@ -40,8 +40,18 @@
   </header>
   <!-- header end -->
 
-  <nav>
-    
+  <nav class="d-flex jc-between ai-center">
+
+    <div>
+      <span>坚果R2</span>
+      <a href="#">概览</a>
+      <a href="#">设计</a>
+      <a href="#">功能</a>
+      <a href="#">相机</a>
+      <a href="#">操作系统</a>
+      <a href="#">技术规格</a>
+    </div>
+    <div><a href="#">优先购买码</a></div>
   </nav>
 
   <!-- 商品详情 -->
@@ -77,7 +87,7 @@
       <div class="color-select d-flex">
         <div class="title">颜色选择</div>
         <div class="btns">
-          <button>浅黑色</button>
+          <button class="active">浅黑色</button>
           <button>松绿色</button>
           <button>纯白色光阴特别版</button>
         </div>
@@ -86,7 +96,7 @@
       <div class="capacity-select d-flex">
         <div class="title">容量选择</div>
         <div class="btns">
-          <button>8G + 128G</button>
+          <button class="active">8G + 128G</button>
           <button>8G + 256G</button>
           <button>12G + 256G</button>
           <button>16G + 512G</button>
@@ -101,10 +111,9 @@
       <div class="service d-flex">
         <div class="title">保修服务</div>
         <div class="contant">
-          <div class="button d-flex ai-center jc-between">
+          <div class="button active d-flex ai-center jc-between">
             <div class="left fs-xs">
               <h2 class="fs-md">坚果R2意外碎屏保修服务</h2>
-
               “屏幕意外摔碎，可以免费更换 ? ”
             </div>
             <div class="right price fs-xs">
@@ -141,13 +150,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
   <!-- 商品图片 -->
   <div class="product-info">
     <img src="../img/product/product1.jpg" alt="">
@@ -181,6 +183,36 @@
     <img src="../img/product/product32.jpg" alt="">
   </div>
 
+
+  <!-- 底部粘性定位，商品购买导航 -->
+  <div class="buy d-flex jc-between ai-center">
+    <div class="left d-flex jc-around ai-start fs-xss">
+      <span>您已选择了</span>
+      <div class="message d-flex ai-center jc-around flex-column">
+        <div class="d-flex ai-center jc-around">
+          <h4>坚果R2</h4>
+          <div class="price">￥4,499.00</div>
+        </div>
+        <p data-p-id="p-JGR2">浅黑色| 8G + 128GB</p>
+      </div>
+    </div>
+    <div class="right d-flex jc-around ai-center">
+      <div class="price"><small>￥</small>4,499.00</div>
+      <div class="btns">
+        <button class="buy-btn">现在购买</button>
+        <button class="add-cart">加入购物车</button>
+      </div>
+    </div>
+    <div class="buy-success">
+      <div class="warning d-flex ai-center jc-center">
+        加入购物车成功
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer start -->
   <footer>
     <div class="footer-main d-flex jc-around flex-column">
       <div class="foot-menu d-flex jc-between">
@@ -230,7 +262,8 @@
   </footer>
   <!-- footer end -->
 
-
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/product.min.js"></script>
 
 </body>
 
