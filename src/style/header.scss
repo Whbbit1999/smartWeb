@@ -89,7 +89,6 @@ z-index: 999;
         color: map-get($colors, 'dark' );
         &:hover{
           color: map-get($colors, 'blue' );
-  
         } 
       }
       .phone{
@@ -107,8 +106,10 @@ z-index: 999;
         top: 75px;
         left: 0;
         background: #fff;
-        width: 100%;
+        width: 140%;
         height: 300px;
+        transform: translateX(-20%);
+        padding: 0 20%;
         opacity: 0;
         ul{
           width: 20%;
